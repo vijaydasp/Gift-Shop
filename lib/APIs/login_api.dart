@@ -1,8 +1,9 @@
 // ignore_for_file: avoid_print
 import 'package:dio/dio.dart';
+import 'package:gift_shop/ipaddress_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-String baseurl = "http://192.168.207.18:5000";
+
 final dio = Dio();
 String? status;
 int? sessionData;

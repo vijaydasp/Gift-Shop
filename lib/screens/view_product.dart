@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:gift_shop/APIs/login_api.dart';
 import 'package:gift_shop/APIs/review_api.dart';
+import 'package:gift_shop/ipaddress_page.dart';
 import 'package:gift_shop/models/review_model.dart';
 import 'package:gift_shop/provider/cartProvider.dart';
 import 'package:gift_shop/screens/cart/buynow_cartpage.dart';
@@ -59,7 +60,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
           productId: widget.product['id'],
           username: userId,
           rating: _rating,
-          comment: _reviewController.text);
+          comment: _reviewController.text);     
 
       if (submittedReview != null) {
         setState(() {
